@@ -35,24 +35,37 @@ public class Atividade2905 {
 
     public static void imprimirBiblioteca() {
         for (LivroDeBiblioteca_extends b : biblioteca) {
-            System.out.println("Título.: " + b.getTitulo());
-            System.out.println("Autor.: " + b.getAutor());
-            System.out.println("Ano de Publicação.: " + b.getAnoPublicacao());
-            System.out.println("Páginas.: " + b.getNumPagina());
-            System.out.println("Editora.: " + b.getEditora());
-            System.out.println("Exemplares.: " + b.getExemplares() + "\r\n");
+            System.out.printf("Título.: %s\r\n"
+                    + "Autor.: %s\r\n"
+                    + "Ano de Publicação.: %d\r\n"
+                    + "Páginas.: %d\r\n"
+                    + "Editora.: %s\r\n"
+                    + "Exemplares.: %d\r\n\r\n",
+                    b.getTitulo(),
+                    b.getAutor(),
+                    b.getAnoPublicacao(),
+                    b.getNumPagina(),
+                    b.getEditora(),
+                    b.getExemplares());
         }
     }
 
     public static void imprimirLivraria() {
         for (LivroDeLivraria_extends l : livraria) {
-            System.out.println("Título.: " + l.getTitulo());
-            System.out.println("Autor.: " + l.getAutor());
-            System.out.println("Ano de Publicação.: " + l.getAnoPublicacao());
-            System.out.println("Páginas.: " + l.getNumPagina());
-            System.out.println("Editora.: " + l.getEditora());
-            System.out.println("ISBN.: " + l.getIsbn());
-            System.out.println("Valor.: R$" + l.getValor() + "\r\n");
+            System.out.printf("Título.: %s\r\n"
+                    + "Autor.: %s\r\n"
+                    + "Ano de Publicação.: %d\r\n"
+                    + "Páginas.: %d\r\n"
+                    + "Editora.: %s\r\n"
+                    + "ISBN.: %s\r\n"
+                    + "Valor.: R$%.2f\r\n\r\n",
+                    l.getTitulo(),
+                    l.getAutor(),
+                    l.getAnoPublicacao(),
+                    l.getNumPagina(),
+                    l.getEditora(),
+                    l.getIsbn(),
+                    l.getValor());
         }
     }
 
@@ -81,7 +94,7 @@ public class Atividade2905 {
         String[] isbn = {
             "9812371813",
             "9083192387",
-            "9731923816"}; //Esses valores são meramente ilustrativos
+            "9731923816"};
 
         if (num < 3) {
             biblioteca[num].setTitulo(titulo[num]);
