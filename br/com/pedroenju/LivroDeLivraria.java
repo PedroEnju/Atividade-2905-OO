@@ -6,17 +6,10 @@ public class LivroDeLivraria {
     private int anoPublicacao;
     private String autor;
     private String editora;
+    private int numPagina;
     private float valor;
     private int exemplares;
-    private int isbn;
-
-    public int getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
-    }
+    private String isbn;
 
     public String getTitulo() {
         return titulo;
@@ -66,5 +59,19 @@ public class LivroDeLivraria {
         this.exemplares = exemplares;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
 
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public int getNumPagina() {
+        return numPagina;
+    }
+
+    public void setNumPagina(int numPagina) {
+        this.numPagina = numPagina;
+    }
 }

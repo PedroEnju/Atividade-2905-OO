@@ -6,6 +6,7 @@ public class Livro {
     private int anoPublicacao;
     private String autor;
     private String editora;
+    private int numPagina;
 
     public String getTitulo() {
         return titulo;
@@ -38,4 +39,13 @@ public class Livro {
     public void setEditora(String editora) {
         this.editora = editora;
     }
+    
+    public int getNumPagina() {
+        return numPagina;
+    }
+
+    public void setNumPagina(int numPagina) {
+        this.numPagina = numPagina;
+    }
+    
 }

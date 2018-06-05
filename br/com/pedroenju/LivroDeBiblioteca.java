@@ -7,9 +7,8 @@ public class LivroDeBiblioteca {
     private int anoPublicacao;
     private String autor;
     private String editora;
+    private int numPagina;
     private int exemplares;
-    private int paginas;
-    private String isbn;
 
     public String getTitulo() {
         return titulo;
@@ -43,6 +42,14 @@ public class LivroDeBiblioteca {
         this.editora = editora;
     }
 
+    public int getNumPagina() {
+        return numPagina;
+    }
+
+    public void setNumPagina(int numPagina) {
+        this.numPagina = numPagina;
+    }
+    
     public int getExemplares() {
         return exemplares;
     }
@@ -50,20 +57,5 @@ public class LivroDeBiblioteca {
     public void setExemplares(int exemplares) {
         this.exemplares = exemplares;
     }
-
-    public int getPaginas() {
-        return paginas;
-    }
-
-    public void setPaginas(int paginas) {
-        this.paginas = paginas;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+    
 }

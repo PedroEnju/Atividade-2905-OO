@@ -4,17 +4,16 @@ package br.com.pedroenju;
 public class LivroDeLivraria_extends extends Livro {
     
     private float valor;
-    private int exemplares;
-    private int isbn;
+    private String isbn;
 
-    public int getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(int isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-
+    
     public float getValor() {
         return valor;
     }
@@ -23,13 +22,4 @@ public class LivroDeLivraria_extends extends Livro {
         this.valor = valor;
     }
 
-    public int getExemplares() {
-        return exemplares;
-    }
-
-    public void setExemplares(int exemplares) {
-        this.exemplares = exemplares;
-    }
-    
-    
 }
