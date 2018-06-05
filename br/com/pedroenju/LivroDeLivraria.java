@@ -8,6 +8,15 @@ public class LivroDeLivraria {
     private String editora;
     private float valor;
     private int exemplares;
+    private int isbn;
+
+    public int getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
+    }
 
     public String getTitulo() {
         return titulo;
